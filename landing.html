@@ -1,0 +1,204 @@
+<!-- using flex -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: linear-gradient(to right, rgba(140, 234, 247, 0.9), rgb(219, 202, 202));
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo h3 {
+      margin: 0;
+    }
+
+    .foot ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .foot li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .foot li:hover {
+      color: #007bff;
+    }
+
+    /* Body section */
+    .body1 {
+      background-image: linear-gradient(to bottom, rgba(109, 194, 101, 0.7), white, rgba(109, 194, 101, 0.7));
+      width: 100%;
+      height: 590px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .text-content {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .img {
+      width: 300px;
+      height: 200px;
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+    }
+    #about{
+      transition: 3ms;
+      scroll-behavior: smooth;
+    }
+    .about1{
+      width: 100%;
+      height: 400px;
+        }
+        #t1{
+          display: flex;
+          justify-content: center;
+        }
+        .box{
+          width: 200px;
+          height: 200px;
+          border: 4px solid blue;
+          border-radius: 10px;
+          display: flex;
+          justify-content: space-around;
+          margin-top: 40px;
+        }
+        .bh{
+          display: flex;
+          justify-content:space-around;
+        }
+        .ph{
+          display: flex;
+          justify-content: space-around;
+        }
+        .pt{
+          margin-right: 50px;
+          justify-content: left;
+          margin-top: 40px;
+        }
+        .god{
+      width: 100%;
+      height: 300px;
+      background-color: #3ec471;
+        }
+        .pt1{
+          text-align:left;
+          position: relative;
+          top:70px;
+        }
+        .btn
+        {
+          width:100%;
+          height: 200px;
+          background-color: #5f3131;
+        }
+        .butto{
+          width: 80%;
+          height: 130px;
+          background-color: #fff;
+          margin-left: 170px;
+          position: relative;
+          top:40px;
+          }
+          .butto p{
+            padding-left: 50px;
+            margin-top: 50px;
+          }
+        .ph1{
+            margin-left: -700px;
+            position:relative;
+            top:40px;
+          }
+          .btn1{
+            display: flex;
+            justify-content:right;
+           margin-right: 300px;
+           color:red;
+          }
+         
+  </style>
+</head>
+<body>
+
+  <div class="head">
+    <div class="logo">
+      <h3>Website</h3>
+      
+    </div>
+    <div class="foot">
+      <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="body1">
+    <div class="text-content">
+      <h2>Welcome to our website!</h2>
+      <p>
+        We’re glad you’re here. This is a simple demo page created to showcase basic web design and layout.  
+        Explore our sections to learn more about what we do, get in touch with us, or find out more about our story.  
+        We’re always working to make our website better, so stay tuned for updates!
+      </p>
+    </div>
+    <div class="img">This is an image source</div>
+  </div>
+  <div class="about1"><h1 id="t1">some random information</h1>
+    <div class="bh">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div></div>
+  <div class="ph">
+    <div class="pt">Welcome to our new demo website<br> — a space built to inspire.</div>
+      <div class="pt">Our goal is to simplify the process<br> of turning ideas into experiences.</div>
+      <div class="pt">The demo includes sample pages,<br> interactive sections. </div>
+      <div class="pt">Use this space to test<br> your content.</div>
+  </div>
+</div>
+<div class="god">
+  <p class="pt1"><h2 class="pt1" style="margin-left: 350px;">“Innovation begins where curiosity meets courage. Every idea,<br> no matter how small, carries the power<br> to reshape the way we think, create, and connect.<br> 
+    Keep building, keep learning, and let progress be your art.”<br>
+— Harper Lane</h2></p>
+</div>
+ <div class="btn">
+  <div class="butto"><h2 class="ph1">Call to actions! It's time!</h2>
+  <p>Keep building, keep learning, and let progress be your art.</p></div>
+  <div class="btn1">Signup</div>
+ </div>
+</body>
+</html>

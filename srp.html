@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper </title>
+    <link rel="Stylesheet" src="style.css">
+    <script>
+        var d=""; let ucount=0;let ccount=0;
+        function userchoice(cchoice){
+        const uchoice=cchoice;
+        const values=['stone','paper','scissor'];
+        const comchoice=values[Math.floor(Math.random()*3)];
+        if(uchoice===comchoice){
+        console.log("Draw..😒");
+        d="Draw..😒";
+        }
+        else if((uchoice==="stone"&&comchoice==="paper")||(uchoice==="scissor"&&comchoice==="paper")||
+        (uchoice==="stone"&&comchoice=="scissor")){
+            console.log("User Win...😍🎉");
+            d="User Win...😍🎉";
+            ucount++;
+        }
+        else{
+        console.log("Computer Win...😢");
+        d="Computer Win...😢";
+        ccount++;
+        }
+        document.getElementById('para').innerHTML=d;
+        document.getElementById('ucount').innerHTML=ucount;
+        document.getElementById('ccount').innerHTML=ccount;
+    }
+    </script>
+</head>
+<body>
+    <div class="user">
+    <button class="stone"onclick="userchoice('stone')">Stone</button>
+    <button class="paper"onclick="userchoice('paper')" >Paper</button>
+    <button class="scissors"onclick="userchoice('scissor')">Scissors</button>
+    </div>
+    <p id="para">Start</p>
+    <p id="ucount">0</p>
+    <p id="ccount">0</p>
+</body>
+</html>
